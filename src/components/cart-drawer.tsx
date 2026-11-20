@@ -14,7 +14,7 @@ export function CartDrawer() {
 	const close = () => setOpen(false);
 	return (
 		<Sheet open={open} onOpenChange={setOpen}>
-			<SheetContent side="right" className="w-full gap-0 p-0 sm:max-w-md">
+			<SheetContent side="right" className="gap-0 p-0 data-[side=right]:w-full data-[side=right]:sm:max-w-md">
 				<SheetHeader className="border-b px-5 py-4">
 					<SheetTitle className="font-heading text-lg">Your bag {count > 0 && <span className="text-muted-foreground">({count})</span>}</SheetTitle>
 					<SheetDescription className="sr-only">Items in your shopping bag</SheetDescription>

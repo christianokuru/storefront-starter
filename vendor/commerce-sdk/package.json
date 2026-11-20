@@ -1,0 +1,17 @@
+{
+	"name": "@commerce-engine/sdk",
+	"version": "0.1.0",
+	"description": "Typed client for the commerce engine Store API: catalogue, cart, checkout, customer accounts.",
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+		"./react": { "types": "./dist/react.d.ts", "import": "./dist/react.js" }
+	},
+	"files": ["dist", "README.md"],
+	"peerDependencies": { "react": ">=18" },
+	"peerDependenciesMeta": { "react": { "optional": true } },
+	"license": "UNLICENSED"
+}
